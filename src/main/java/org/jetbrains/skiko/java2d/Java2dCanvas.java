@@ -15,7 +15,7 @@ public class Java2dCanvas {
     }
 
     public static org.jetbrains.skia.Canvas create(Graphics2D g2d) {
-        return new org.jetbrains.skia.Canvas(new Java2dCanvas(g2d).createCanvasImpl(), false, "") ;
+        return new org.jetbrains.skia.Canvas(new Java2dCanvas(g2d).createCanvasImpl(), true, "") ;
     }
 
     private native long createCanvasImpl();

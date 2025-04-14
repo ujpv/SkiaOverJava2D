@@ -11,5 +11,6 @@ class SkiaOverJava2dPanel(val renderDelegate: SkikoRenderDelegate) : JPanel() {
         g2g.scale(deviceScaleFactor, deviceScaleFactor)
         val canvas = Java2dCanvas.create(g2g)
         renderDelegate.onRender(canvas, g2g.clipBounds.width, g2g.clipBounds.height, System.nanoTime())
+        canvas.close()
     }
 }
