@@ -14,5 +14,6 @@ Notes:
 - Building the native lib is not supported on Linux
 
 # Development
+Run `./gradlew unzipSkiaNative` to dowlonad the SKIA sources.
 To browse the native sources open [CMakeLists.txt](native/CMakeLists.txt). 
 Make sure that `JAVA_HOME is set`.
